@@ -1,0 +1,46 @@
+
+
+.banner  {
+    background-image: url(interrogation.jpg);
+    display: grid;
+    text-align: center;
+    height: 150px;
+    width: auto;
+    margin-bottom: 5rem;
+    
+    
+}
+
+.entete {
+    display: grid;
+    font-size: 3vw;
+    margin: 3rem;
+
+  
+ 
+}
+
+.titlecv {
+    display: grid;
+    font-size: 3vw;
+    text-align: center;
+
+}
+
+.textecv {
+    display: flex;
+    line-height: 2em;
+    text-indent: 50px;
+    text-align: justify;
+    margin: 1rem;
+    font-size: 2vw;
+    
+}
+.cvlist {
+   display: grid;
+   line-height: 3em;
+   text-align: center;
+   font-size: 2vw;
+
+}
+
