@@ -7,23 +7,21 @@
     height: 150px;
     width: auto;
     margin-bottom: 5rem;
-    
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
 }
 
 .entete {
     display: grid;
-    font-size: 3vw;
+    font-size: 4vw;
     margin: 3rem;
-
-  
- 
 }
 
 .titlecv {
     display: grid;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
@@ -33,14 +31,40 @@
     text-indent: 50px;
     text-align: justify;
     margin: 1rem;
-    font-size: 2vw;
+    font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 .cvlist {
    display: grid;
    line-height: 3em;
    text-align: center;
-   font-size: 2vw;
+   font-size: 1vw;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
+.cvbutton {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 1rem;
+    border-radius: 2em;
+    height: 5rem;
+    width: auto;
+
+}
+
+.footercv {
+   /* background-image: url(footercv.png);*/
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+}
+
+button {
+    display: inline;
+    border-radius: 3rem;
+    justify-content: center;
+}
