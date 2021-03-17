@@ -1,0 +1,14 @@
+.introEntretien {
+    text-align: center;
+}
+
+.menuButton {
+    display: flex;
+    flex-direction: column;
+    max-width: 25vw;
+    margin: auto;
+}
+
+.liensEntretien {
+    margin: 10px;
+}
