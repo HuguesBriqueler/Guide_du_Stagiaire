@@ -3,9 +3,16 @@
 .centered {
     text-align: center;
 }
-
+body {
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 1200px;
+    max-height: 1000px;
+}
 .headerIndex {
-    background-image: url(backgroundyellow.png);
+    background-color: lightgoldenrodyellow;
+    position: sticky;
+    top: 8px;
 }
 
 .navIndex ul {
@@ -32,6 +39,8 @@
 
 .bubble {
     background-image: url(desorganiser.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
 }
 
 .bubbles1 {
