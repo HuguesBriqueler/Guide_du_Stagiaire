@@ -1,0 +1,99 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #235;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and(max-width: 960px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+.container {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container .box {
+    position: relative;
+    background-color: beige;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 20px 40px 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+} */
+
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: .5em;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+#box1 {
+    background: gray;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#box2 {
+    background: #6f6f6f;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#box3 {
+    background: beige;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#box4 {
+    background: beige;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#box5 {
+    background: seashell;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#box6 {
+    background: darkgray;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
