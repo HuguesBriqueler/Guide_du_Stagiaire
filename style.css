@@ -1,10 +1,28 @@
-nav {
+/*nav {
   display: flex;
   font-size: 4rem;
   justify-content: center;
   }
+*/
 
+.centered {
+  text-align: center;
+}
 
+.navIndex ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    padding-bottom: 25px;
+    border-bottom: black solid 2px;
+}
+.navIndex li {
+    list-style: none;
+}
+.titreIndex {
+    margin: 0px;
+    padding: 20px 0px;
+}
 
 
 
