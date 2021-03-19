@@ -1,0 +1,95 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: stretch;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    text-align: center;
+    justify-content: space-around;
+    background-image: url(modernjobsearch.png.crdownload);
+    background-repeat: repeat;
+}
+
+.container>article {
+    max-width: 100%;
+}
+
+.article>img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.article {
+    grid-area: photo;
+    background: yellow;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+#box1 {
+    /* background: gray; */
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+
+/* #box1 img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#box1 img.top:hover {
+    opacity: 0;
+} */
+
+#box2 {
+    /* background: #6f6f6f; */
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#box3 {
+    /* background: beige; */
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#box4 {
+    /* background: beige; */
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#box5 {
+    /* background: seashell; */
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#box6 {
+    /* background: darkgray; */
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
