@@ -3,7 +3,7 @@ Rédige un texte de présentation de ton projet. Tu peux suivre la trame suivant
 
 liste les membres de ton équipe, et présente brièvement le projet (précise les dates de début et de fin) ;
 
--Hugues (JavaScript++ // CSS --), Calvin(JavaScript++ // CSS ++), Marjorie (JavaScript -- // CSS ++)
+-Hugues (JavaScript++ // CSS --), Calvin(JavaScript+ // CSS +), Marjorie (JavaScript -- // CSS ++)
 
 dates : du 16/03/21 au 26/03/21
 
