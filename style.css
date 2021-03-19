@@ -6,8 +6,9 @@
 body {
     margin: 0px auto;
     padding: 0px;
-    max-width: 1200px;
+   max-width: 1200px;
     max-height: 1000px;
+    background-color: lightgoldenrodyellow;
 }
 .headerIndex {
     background-color: lightgoldenrodyellow;
@@ -40,18 +41,19 @@ body {
 .bulles {
     margin:0;
     padding:0;
-    background: url(desorganiser2.png) no-repeat center fixed; 
+    background: url(desorganiser2.png) no-repeat center;
     -webkit-background-size: cover;
-    background-size: cover; 
-   
+    background-size: cover;  
+    padding-bottom: 400px;
 }
 
 /*DIV QUI ENGLOBE LES BULLES */
 .bubbles1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 1rem;
+    padding-bottom: 180px;
 }
 
 
@@ -74,7 +76,7 @@ body {
 }*/
 
 .thought {
-    display: flex;
+    display: grid;
     background-color: rgb(240, 215, 76);
     padding: 20px;
     border-radius: 30px;
