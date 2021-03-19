@@ -1,0 +1,97 @@
+
+/* BANNIERE */
+.banner
+{
+	background-image: url(backgroundyellow.png);
+	display: grid;
+	text-align: center;
+	height: 150px;
+	width: auto;
+	margin-bottom: 5rem;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bolder;
+    
+    margin:0px;
+    padding: 0px;
+}
+
+/*TITRE PRINCIPAL */
+.entete
+{
+	display: grid;
+	font-size: 4vw;
+	margin: 3rem;
+}
+
+/*INTRODUCTION*/
+.introcv
+{
+	display: grid;
+	font-size: 1vw;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: italic;
+	padding-left: 10rem;
+	margin-right: 10rem;
+}
+
+/* TITRES DE LA PAGE*/
+.titlecv
+{
+	display: grid;
+	font-size: 2vw;
+	text-align: center;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+
+/*PARAGRAPHES DE LA PAGE */
+.textecv
+{
+	display: flex;
+	line-height: 2em;
+	text-indent: 50px;
+	text-align: justify;
+	margin: 1rem;
+	font-size: 1vw;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*LISTE A PUCES*/
+.cvlist
+{
+	display: grid;
+	text-align: center;
+	line-height: 1em;
+	font-size: 1vw;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*BOUTONS LIENS BAS DE PAGE*/
+.cvbutton
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-gap: 1rem;
+    text-align: center;
+	border-radius: 2em;
+	height: 5rem;
+	width: auto;
+}
+
+button
+{
+	display: inline;
+	border-radius: 3rem;
+	justify-content: center;
+}
+
+/*BAS DE PAGE*/
+.footercv
+{
+	/* background-image: url(footercv.png);
+	*/
+	position: absolute;
+	display: grid;
+	justify-content: center;
+	height: 150px;
+	width: auto;
+}
