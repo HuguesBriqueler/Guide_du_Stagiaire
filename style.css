@@ -38,9 +38,11 @@ body {
 /*GRID BULLES + IMAGE */
 
 .bulles {
-   background-image: url(desorganiser2.png);
-    background-size: cover ;
-    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    background: url(desorganiser2.png) no-repeat center fixed; 
+    -webkit-background-size: cover;
+    background-size: cover; 
    
 }
 
