@@ -12,6 +12,10 @@
     text-align: center;
 }
 
+.anchor {
+    height: 130px;
+}
+
 body {
     margin: 0px auto;
     padding: 0px;
@@ -323,7 +327,6 @@ BULLE PENSEE 2 (ENTREPRISE)*/
 /*TITRE PRINCIPAL */
 .entete
 {
-	display: grid;
 	font-size: 4vw;
 	margin: 3rem;
 	font-family: "titre";
