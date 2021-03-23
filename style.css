@@ -1,5 +1,13 @@
 /* ENTETE DE PAGE */
+@font-face {
+    font-family: "titre";
+    src: url("titlePolice.ttf");
+}
 
+@font-face {
+    font-family: "paragraphe";
+    src: url("policeTexte.otf");
+}
 .centered {
     text-align: center;
 }
@@ -7,8 +15,13 @@
 body {
     margin: 0px auto;
     padding: 0px;
+<<<<<<< HEAD
     max-width: 1200px;
     max-height: 1000px;
+=======
+  /* max-width: 1200px;
+    max-height: 1000px;*/
+>>>>>>> master
     background-color: rgb(255, 255, 255);
 }
 
@@ -16,6 +29,9 @@ body {
     background-color: white;
     position: sticky;
     top: 8px;
+    padding-bottom: 70px;
+    background-image: url(banner2.jpg);
+    z-index: 10;
 }
 
 .navIndex ul {
@@ -24,8 +40,9 @@ body {
     padding: 0px;
     padding-bottom: 25px;
     border-bottom: black solid 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "titre";
     font-weight: bolder;
+   
 }
 
 .navIndex li {
@@ -35,15 +52,34 @@ body {
 .titreIndex {
     margin: 0px;
     padding: 20px 0px;
+    font-family: "titre";
 }
 
 
 /*GRID BULLES + IMAGE */
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 .bubble {
     background-image: url(desorganiser.png);
     background-size: cover;
     background-repeat: no-repeat;
+<<<<<<< HEAD
+=======
+=======
+.bulles {
+    margin:0;
+    padding:0;
+    background: url(homme.png) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;  
+    
+    padding-bottom: 700px;
+    font-family: "paragraphe";
+>>>>>>> master
+>>>>>>> master
 }
 
 
