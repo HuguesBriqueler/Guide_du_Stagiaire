@@ -1,5 +1,13 @@
 /* ENTETE DE PAGE */
+@font-face {
+    font-family: "titre";
+    src: url("titlePolice.ttf");
+}
 
+@font-face {
+    font-family: "paragraphe";
+    src: url("policeTexte.otf");
+}
 .centered {
     text-align: center;
 }
@@ -7,14 +15,18 @@
 body {
     margin: 0px auto;
     padding: 0px;
-    max-width: 1200px;
-    max-height: 1000px;
+  /* max-width: 1200px;
+    max-height: 1000px;*/
+    background-color: rgb(255, 255, 255);
 }
 
 .headerIndex {
-    background-color: lightgoldenrodyellow;
+    background-color: white;
     position: sticky;
     top: 8px;
+    padding-bottom: 70px;
+    background-image: url(banner2.jpg);
+    z-index: 10;
 }
 
 .navIndex ul {
@@ -23,8 +35,9 @@ body {
     padding: 0px;
     padding-bottom: 25px;
     border-bottom: black solid 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "titre";
     font-weight: bolder;
+   
 }
 
 .navIndex li {
@@ -34,33 +47,109 @@ body {
 .titreIndex {
     margin: 0px;
     padding: 20px 0px;
+    font-family: "titre";
 }
 
 
 /*GRID BULLES + IMAGE */
 
+<<<<<<< HEAD
 .bubble {
     background-image: url(desorganiser.png);
     background-size: cover;
     background-repeat: no-repeat;
+=======
+.bulles {
+    margin:0;
+    padding:0;
+    background: url(homme.png) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;  
+    
+    padding-bottom: 700px;
+    font-family: "paragraphe";
+>>>>>>> master
 }
 
+/*DIV QUI ENGLOBE LES BULLES */
 .bubbles1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 1rem;
+    padding-bottom: 180px;
 }
 
-.bubbles2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-}
 
 
 /*BULLE NUMERO 1 (CV)*/
+.oval-thought {
+    position: relative;
+    width: 270px;
+    padding: 50px 40px;
+    margin: 1em auto 80px;
+    text-align: center;
+    color: rgb(179, 176, 160);
+    background: rgb(179, 176, 160);
+    border: 8px solid black;
+    /* css3 */
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(216, 215, 206)), to(rgb(216, 215, 206)));
+    background: -moz-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
+    background: -o-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
+    background: linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
+    /*
+  NOTES:
+  -webkit-border-radius:220px 120px; // produces oval in safari 4 and chrome 4
+  -webkit-border-radius:220px / 120px; // produces oval in chrome 4 (again!) but not supported in safari 4
+  Not correct application of the current spec, therefore, using longhand to avoid future problems with webkit corrects this
+  */
+    -webkit-border-top-left-radius: 220px 120px;
+    -webkit-border-top-right-radius: 220px 120px;
+    -webkit-border-bottom-right-radius: 220px 120px;
+    -webkit-border-bottom-left-radius: 220px 120px;
+    -moz-border-radius: 220px / 120px;
+    border-radius: 220px / 120px;
+}
+
+.oval-thought p {
+    font-size: 1.25em;
+}
+
+
+/* creates the larger circle */
+
+.oval-thought:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    background: rgb(216, 215, 206);
+    /* css3 */
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border: 8px solid black;
+}
+
+
+/* creates the smaller circle */
+
+.oval-thought:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    width: 15px;
+    height: 15px;
+    background: rgb(216, 215, 206);
+    /* css3 */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 8px solid black;
+}
 
 
 /*body {
@@ -77,10 +166,11 @@ body {
 
 }*/
 
-.thought {
-    display: flex;
-    background-color: rgb(240, 215, 76);
+/*.thought {
+    display: grid;
+    background-color: rgb(216, 215, 206);
     padding: 20px;
+    border: 8px solid rgb(0, 0, 0);
     border-radius: 30px;
     min-width: 40px;
     max-width: 220px;
@@ -95,7 +185,7 @@ body {
 .thought:before,
 .thought:after {
     content: "";
-    background-color: rgb(255, 229, 81);
+    background-color: rgb(216, 215, 206);
     border-radius: 50%;
     display: block;
     position: absolute;
@@ -107,7 +197,7 @@ body {
     height: 44px;
     top: -12px;
     left: 28px;
-    box-shadow: -50px 30px 0 -12px rgb(255, 229, 81);
+    box-shadow: -50px 30px 0 -12px rgb(0, 0, 0);
 }
 
 .thought:after {
@@ -115,21 +205,90 @@ body {
     right: 26px;
     width: 30px;
     height: 30px;
-    box-shadow: 40px -34px 0 0 rgb(255, 229, 81), -28px -6px 0 -2px rgb(255, 229, 81), -24px 17px 0 -6px rgb(255, 229, 81), -5px 25px 0 -10px rgb(255, 229, 81);
+    box-shadow: 40px -34px 0 0 rgb(0, 0, 0), -28px -6px 0 -2px rgb(0, 0, 0), -24px 17px 0 -6px rgb(0, 0, 0), -5px 25px 0 -10px rgb(255, 229, 81);
 }
-
+*/
 
 /* 
 BULLE PENSEE 2 (ENTREPRISE)*/
 
-p.bubble {
+.oval-thought {
+    position: relative;
+    width: 270px;
+    padding: 50px 40px;
+    margin: 1em auto 80px;
+    text-align: center;
+    color: rgb(179, 176, 160);
+    background: rgb(179, 176, 160);
+    border: 8px solid black;
+    /* css3 */
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(216, 215, 206)), to(rgb(216, 215, 206)));
+    background: -moz-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
+    background: -o-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
+    background: linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
+    /*
+  NOTES:
+  -webkit-border-radius:220px 120px; // produces oval in safari 4 and chrome 4
+  -webkit-border-radius:220px / 120px; // produces oval in chrome 4 (again!) but not supported in safari 4
+  Not correct application of the current spec, therefore, using longhand to avoid future problems with webkit corrects this
+  */
+    -webkit-border-top-left-radius: 220px 120px;
+    -webkit-border-top-right-radius: 220px 120px;
+    -webkit-border-bottom-right-radius: 220px 120px;
+    -webkit-border-bottom-left-radius: 220px 120px;
+    -moz-border-radius: 220px / 120px;
+    border-radius: 220px / 120px;
+}
+
+.oval-thought p {
+    font-size: 1.25em;
+}
+
+
+/* creates the larger circle */
+
+.oval-thought:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    background: rgb(216, 215, 206);
+    /* css3 */
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border: 8px solid black;
+}
+
+
+/* creates the smaller circle */
+
+.oval-thought:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    width: 15px;
+    height: 15px;
+    background: rgb(216, 215, 206);
+    /* css3 */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 8px solid black;
+}
+
+
+/*p.bubble {
     position: relative;
     width: 300px;
     text-align: center;
     line-height: 1.4em;
     margin: 40px auto;
-    background-color: #fff;
-    border: 8px solid #333;
+    background-color: rgb(216, 215, 206);
+    border: 8px solid rgb(5, 5, 5);
     border-radius: 30px;
     font-family: sans-serif;
     padding: 20px;
@@ -156,8 +315,8 @@ p.thought:after {
     bottom: -30px;
     width: 40px;
     height: 40px;
-    background-color: #fff;
-    border: 8px solid #333;
+    background-color: rgb(216, 215, 206);
+    border: 8px solid rgb(0, 0, 0);
     -webkit-border-radius: 28px;
     -moz-border-radius: 28px;
     border-radius: 28px;
@@ -171,7 +330,7 @@ p.thought:after {
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
     border-radius: 18px;
-}
+} */
 
 
 /*.circular-sb {
@@ -232,13 +391,14 @@ p.thought:after {
     padding: 50px 40px;
     margin: 1em auto 80px;
     text-align: center;
-    color: #fff;
-    background: #075698;
+    color: rgb(179, 176, 160);
+    background: rgb(179, 176, 160);
+    border: 8px solid black;
     /* css3 */
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#2e88c4), to(#075698));
-    background: -moz-linear-gradient(#2e88c4, #075698);
-    background: -o-linear-gradient(#2e88c4, #075698);
-    background: linear-gradient(#2e88c4, #075698);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(216, 215, 206)), to(rgb(216, 215, 206)));
+    background: -moz-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
+    background: -o-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
+    background: linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
     /*
   NOTES:
   -webkit-border-radius:220px 120px; // produces oval in safari 4 and chrome 4
@@ -267,11 +427,12 @@ p.thought:after {
     left: 50px;
     width: 30px;
     height: 30px;
-    background: #075698;
+    background: rgb(216, 215, 206);
     /* css3 */
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    border: 8px solid black;
 }
 
 
@@ -284,17 +445,18 @@ p.thought:after {
     left: 30px;
     width: 15px;
     height: 15px;
-    background: #075698;
+    background: rgb(216, 215, 206);
     /* css3 */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
+    border: 8px solid black;
 }
 
 
 /* QUATRIEME BULLE DE PENSEE (DEMARCHES) */
 
-.oval-thought-border {
+/*.oval-thought-border {
     position: relative;
     padding: 70px 30px;
     margin: 1em auto 80px;
@@ -309,7 +471,7 @@ p.thought:after {
   -webkit-border-radius:240px / 140px; // produces oval in chrome 4 (again!) but not supported in safari 4
   Not correct application of the current spec, therefore, using longhand to avoid future problems with webkit corrects this
   */
-    -webkit-border-top-left-radius: 240px 140px;
+ /*   -webkit-border-top-left-radius: 240px 140px;
     -webkit-border-top-right-radius: 240px 140px;
     -webkit-border-bottom-right-radius: 240px 140px;
     -webkit-border-bottom-left-radius: 240px 140px;
@@ -320,7 +482,7 @@ p.thought:after {
 
 /* creates the larger circle */
 
-.oval-thought-border:before {
+/*.oval-thought-border:before {
     content: "";
     position: absolute;
     z-index: 10;
@@ -331,17 +493,17 @@ p.thought:after {
     border: 10px solid #c81e2b;
     background: #fff;
     /* css3 */
-    -webkit-border-radius: 50px;
+    /*-webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
     /* reduce the damage in FF3.0 */
-    display: block;
+   /* display: block;
 }
 
 
 /* creates the smaller circle */
 
-.oval-thought-border:after {
+/*.oval-thought-border:after {
     content: "";
     position: absolute;
     z-index: 10;
@@ -352,9 +514,9 @@ p.thought:after {
     border: 10px solid #c81e2b;
     background: #fff;
     /* css3 */
-    -webkit-border-radius: 25px;
+   /* -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
     /* reduce the damage in FF3.0 */
-    display: block;
-}
+  /*  display: block;
+}*/
