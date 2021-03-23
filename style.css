@@ -45,6 +45,7 @@ body {
 }
 
 .titreIndex {
+    font-size: 65px;
     margin: 0px;
     padding: 20px 0px;
     font-family: "titre";
@@ -53,22 +54,12 @@ body {
 
 /*GRID BULLES + IMAGE */
 
-<<<<<<< HEAD
-.bubble {
-    background-image: url(desorganiser.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-=======
 .bulles {
-    margin:0;
-    padding:0;
     background: url(homme.png) no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;  
-    
-    padding-bottom: 700px;
-    font-family: "paragraphe";
->>>>>>> master
+    padding-bottom: 400px;
+    margin-bottom: 200px;
 }
 
 /*DIV QUI ENGLOBE LES BULLES */
@@ -77,7 +68,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 1rem;
-    padding-bottom: 180px;
+    padding-bottom: 200px;
+    margin-bottom: 300px;
+    margin-top: 50px;
 }
 
 
@@ -520,3 +513,224 @@ p.thought:after {
     /* reduce the damage in FF3.0 */
   /*  display: block;
 }*/
+
+
+/* --------------- PAGE CV ------------------ */
+
+.banner
+{
+	background-image: url(banner2.jpg);
+	display: grid;
+	text-align: center;
+	height: 150px;
+	width: auto;
+	margin-bottom: 5rem;
+	font-family: "titre";
+	font-weight: bolder;
+    
+    margin:0px;
+    padding: 0px;
+}
+
+/*TITRE PRINCIPAL */
+.entete
+{
+	display: grid;
+	font-size: 4vw;
+	margin: 3rem;
+	font-family: "titre";
+}
+
+/*INTRODUCTION*/
+.introcv
+{
+	display: grid;
+	font-size: 1vw;
+	text-align: center;
+	font-family: "paragraphe";
+	font-style: italic;
+	padding-left: 10rem;
+	margin-right: 10rem;
+}
+
+/* TITRES DE LA PAGE*/
+.titlecv
+{
+	display: grid;
+	font-size: 2vw;
+	text-align: center;
+font-family: "titre";
+}
+
+/*PARAGRAPHES DE LA PAGE */
+.textecv
+{
+	display: flex;
+	line-height: 2em;
+	text-indent: 50px;
+	text-align: justify;
+	margin: 1rem;
+	font-size: 1vw;
+	font-family: "paragraphe";
+}
+
+/*LISTE A PUCES*/
+.cvlist
+{
+	display: grid;
+	text-align: center;
+	line-height: 1em;
+	font-size: 1vw;
+	font-family: "paragraphe";
+}
+
+/*BOUTONS LIENS BAS DE PAGE*/
+.cvbutton
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-gap: 1rem;
+    text-align: center;
+	border-radius: 2em;
+	height: 5rem;
+	width: auto;
+	font-family: "paragraphe";
+}
+
+button
+{
+	display: inline;
+	border-radius: 3rem;
+	text-align: center;
+	font-family: "paragraphe";
+}
+ 
+
+
+/* ------------- PAGE ENTRETIENS ---------------------- */
+
+/*.bodyEntretien {
+    max-width: 80vw;
+    margin: auto;
+}*/
+
+.centered {
+    text-align: center;
+}
+
+.menuButton {
+    display: flex;
+    flex-direction: column;
+    max-width: 25vw;
+    margin: auto;
+}
+
+.liensEntretien {
+    margin: 10px;
+}
+
+.navEntretien{
+    background-image: url("./interrogation.jpg");
+}
+
+.navEntretien ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    padding-bottom: 25px;
+    border-bottom: black solid 2px;
+}
+
+.navEntretien li {
+    list-style: none;
+}
+
+.titreEntretien {
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+
+
+/* ---------------------------------- RESEAUX ------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root {
+   --main-radius: 10px;
+   --main-padding: 10px;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   grid-gap: 10px;
+   align-items: stretch;
+   font-family: "Quicksand";
+   font-weight: 800;
+   font-size: medium;
+   text-align: center;
+   justify-content: space-around;
+   /* background-image: url(modernjobsearch.png); */
+   background-color: darkgrey;
+}
+
+.container>article {
+   max-width: 100%;
+}
+
+.article>img {
+   object-fit: cover;
+   width: 100%;
+   max-height: 100%;
+}
+
+img {
+   opacity: 0.5;
+}
+
+img:hover {
+   opacity: 1.0;
+   background-size: 150%;
+   background-position: center;
+   transition: 1s;
+   cursor: pointer;
+}
+
+.link {
+   color: blue;
+}
+
+h4 a:hover {
+   color: orange;
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+   background-position: 0 100%;
+   background-size: auto 6px;
+   background-repeat: repeat-x;
+   text-decoration: none;
+}
+
+.article {
+   grid-area: photo;
+   background: yellow;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+}
+
+@media only screen and (max-width: 960px) {
+   .container {
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+   }
+}
+
+#box {
+   border-radius: var(--main-radius);
+   padding-top: var(--main-padding);
+   transition: 1s;
+}
+
+#box:hover {
+   transform: scale(1.1);
+}
