@@ -15,8 +15,13 @@
 body {
     margin: 0px auto;
     padding: 0px;
+<<<<<<< HEAD
+    max-width: 1200px;
+    max-height: 1000px;
+=======
   /* max-width: 1200px;
     max-height: 1000px;*/
+>>>>>>> master
     background-color: rgb(255, 255, 255);
 }
 
@@ -54,15 +59,39 @@ body {
 
 /*GRID BULLES + IMAGE */
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
+.bubble {
+    background-image: url(desorganiser.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ada3336bca2c32d6cdeff6a2664c852ecee66666
 .bulles {
     background: url(homme.png) no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;  
+<<<<<<< HEAD
     padding-bottom: 400px;
     margin-bottom: 200px;
+=======
+    
+    padding-bottom: 700px;
+    font-family: "paragraphe";
+>>>>>>> master
+>>>>>>> master
+>>>>>>> ada3336bca2c32d6cdeff6a2664c852ecee66666
 }
 
+
 /*DIV QUI ENGLOBE LES BULLES */
+
 .bubbles1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -74,8 +103,8 @@ body {
 }
 
 
-
 /*BULLE NUMERO 1 (CV)*/
+
 .oval-thought {
     position: relative;
     width: 270px;
@@ -159,6 +188,7 @@ body {
 
 }*/
 
+
 /*.thought {
     display: grid;
     background-color: rgb(216, 215, 206);
@@ -201,6 +231,7 @@ body {
     box-shadow: 40px -34px 0 0 rgb(0, 0, 0), -28px -6px 0 -2px rgb(0, 0, 0), -24px 17px 0 -6px rgb(0, 0, 0), -5px 25px 0 -10px rgb(255, 229, 81);
 }
 */
+
 
 /* 
 BULLE PENSEE 2 (ENTREPRISE)*/
@@ -449,6 +480,7 @@ p.thought:after {
 
 /* QUATRIEME BULLE DE PENSEE (DEMARCHES) */
 
+
 /*.oval-thought-border {
     position: relative;
     padding: 70px 30px;
@@ -458,13 +490,17 @@ p.thought:after {
     color: #333;
     background: #fff;
     /* css3 */
-    /*
+
+
+/*
   NOTES:
   -webkit-border-radius:240px 140px; // produces oval in safari 4 and chrome 4
   -webkit-border-radius:240px / 140px; // produces oval in chrome 4 (again!) but not supported in safari 4
   Not correct application of the current spec, therefore, using longhand to avoid future problems with webkit corrects this
   */
- /*   -webkit-border-top-left-radius: 240px 140px;
+
+
+/*   -webkit-border-top-left-radius: 240px 140px;
     -webkit-border-top-right-radius: 240px 140px;
     -webkit-border-bottom-right-radius: 240px 140px;
     -webkit-border-bottom-left-radius: 240px 140px;
@@ -474,6 +510,7 @@ p.thought:after {
 
 
 /* creates the larger circle */
+
 
 /*.oval-thought-border:before {
     content: "";
@@ -486,15 +523,20 @@ p.thought:after {
     border: 10px solid #c81e2b;
     background: #fff;
     /* css3 */
-    /*-webkit-border-radius: 50px;
+
+
+/*-webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
     /* reduce the damage in FF3.0 */
-   /* display: block;
+
+
+/* display: block;
 }
 
 
 /* creates the smaller circle */
+
 
 /*.oval-thought-border:after {
     content: "";
@@ -507,10 +549,13 @@ p.thought:after {
     border: 10px solid #c81e2b;
     background: #fff;
     /* css3 */
-   /* -webkit-border-radius: 25px;
+
+
+/* -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
     /* reduce the damage in FF3.0 */
+<<<<<<< HEAD
   /*  display: block;
 }*/
 
@@ -734,3 +779,9 @@ h4 a:hover {
 #box:hover {
    transform: scale(1.1);
 }
+=======
+
+
+/*  display: block;
+}*/
+>>>>>>> ada3336bca2c32d6cdeff6a2664c852ecee66666
