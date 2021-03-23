@@ -27,6 +27,7 @@ body {
     padding-bottom: 70px;
     background-image: url(banner2.jpg);
     z-index: 10;
+    
 }
 
 .navIndex ul {
@@ -46,9 +47,13 @@ body {
 
 .titreIndex {
     font-size: 65px;
+    color: rgb(0, 0, 5);
+    text-shadow: 10px 5px 5px rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px black;
     margin: 0px;
     padding: 20px 0px;
     font-family: "titre";
+    background-image: url(banner2.jpg);
 }
 
 
@@ -150,64 +155,6 @@ body {
 }
 
 
-/*body {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 0;
-    height: 100vh;
-    align-items: center;
-    align-content: center;
-    padding: 0 8rem;
-
-
-}*/
-
-
-/*.thought {
-    display: grid;
-    background-color: rgb(216, 215, 206);
-    padding: 20px;
-    border: 8px solid rgb(0, 0, 0);
-    border-radius: 30px;
-    min-width: 40px;
-    max-width: 220px;
-    min-height: 40px;
-    margin: 20px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.thought:before,
-.thought:after {
-    content: "";
-    background-color: rgb(216, 215, 206);
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    z-index: -1;
-}
-
-.thought:before {
-    width: 44px;
-    height: 44px;
-    top: -12px;
-    left: 28px;
-    box-shadow: -50px 30px 0 -12px rgb(0, 0, 0);
-}
-
-.thought:after {
-    bottom: -10px;
-    right: 26px;
-    width: 30px;
-    height: 30px;
-    box-shadow: 40px -34px 0 0 rgb(0, 0, 0), -28px -6px 0 -2px rgb(0, 0, 0), -24px 17px 0 -6px rgb(0, 0, 0), -5px 25px 0 -10px rgb(255, 229, 81);
-}
-*/
-
 
 /* 
 BULLE PENSEE 2 (ENTREPRISE)*/
@@ -278,110 +225,10 @@ BULLE PENSEE 2 (ENTREPRISE)*/
     -moz-border-radius: 15px;
     border-radius: 15px;
     border: 8px solid black;
-}
+}                                                
 
 
-/*p.bubble {
-    position: relative;
-    width: 300px;
-    text-align: center;
-    line-height: 1.4em;
-    margin: 40px auto;
-    background-color: rgb(216, 215, 206);
-    border: 8px solid rgb(5, 5, 5);
-    border-radius: 30px;
-    font-family: sans-serif;
-    padding: 20px;
-    font-size: large;
-}
-
-p.thought {
-    width: 300px;
-    border-radius: 200px;
-    padding: 30px;
-}
-
-p.bubble:before,
-p.bubble:after {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-}
-
-p.thought:before,
-p.thought:after {
-    left: 10px;
-    bottom: -30px;
-    width: 40px;
-    height: 40px;
-    background-color: rgb(216, 215, 206);
-    border: 8px solid rgb(0, 0, 0);
-    -webkit-border-radius: 28px;
-    -moz-border-radius: 28px;
-    border-radius: 28px;
-}
-
-p.thought:after {
-    width: 20px;
-    height: 20px;
-    left: 5px;
-    bottom: -40px;
-    -webkit-border-radius: 18px;
-    -moz-border-radius: 18px;
-    border-radius: 18px;
-} */
-
-
-/*.circular-sb {
-  width: 250px;
-  border: 5px solid rgb(255, 229, 81);
-  padding: 80px 0px;
-  margin: 30px auto;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 900;
-  font-family: arial;
-  position: relative;
-  color: rgb(255, 229, 81);
-}
-
-
-
-.circle1 {
-  border: 5px solid rgb(255, 229, 81);
-  position: absolute;
-  width: 25px;
-  padding: 20px;
-  border-radius: 50%;
-  right: -15px;
-  bottom: 23px;
-}
-
-.circle1:before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  padding: 20px;
-  border-radius: 50%;
-  right: 0px;
-  bottom: 0px;
-  background: rgb(255, 229, 81);
-}
-
-.circle2 {
-  border: 5px solid rgb(255, 229, 81);
-  position: absolute;
-  width: 5px;
-  padding: 10px 15px;
-  border-radius: 50%;
-  right: -60px;
-  bottom: 5px;
-}
-
-*/
-
+/
 
 /* TROISIEME BULLE DE PENSEE (RESEAUX) */
 
@@ -454,87 +301,6 @@ p.thought:after {
 }
 
 
-/* QUATRIEME BULLE DE PENSEE (DEMARCHES) */
-
-
-/*.oval-thought-border {
-    position: relative;
-    padding: 70px 30px;
-    margin: 1em auto 80px;
-    border: 10px solid #c81e2b;
-    text-align: center;
-    color: #333;
-    background: rgb(179, 176, 160);
-    /* css3 */
-
-
-/*
-  NOTES:
-  -webkit-border-radius:240px 140px; // produces oval in safari 4 and chrome 4
-  -webkit-border-radius:240px / 140px; // produces oval in chrome 4 (again!) but not supported in safari 4
-  Not correct application of the current spec, therefore, using longhand to avoid future problems with webkit corrects this
-  */
-
-
-/*   -webkit-border-top-left-radius: 240px 140px;
-    -webkit-border-top-right-radius: 240px 140px;
-    -webkit-border-bottom-right-radius: 240px 140px;
-    -webkit-border-bottom-left-radius: 240px 140px;
-    -moz-border-radius: 240px / 140px;
-    border-radius: 240px / 140px;
-}
-
-
-/* creates the larger circle */
-
-
-/*.oval-thought-border:before {
-    content: "";
-    position: absolute;
-    z-index: 10;
-    bottom: -40px;
-    right: 100px;
-    width: 50px;
-    height: 50px;
-    border: 10px solid #c81e2b;
-    background: rgb(179, 176, 160);
-    /* css3 */
-
-
-/*-webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    /* reduce the damage in FF3.0 */
-
-
-/* display: block;
-}
-
-
-/* creates the smaller circle */
-
-
-/*.oval-thought-border:after {
-    content: "";
-    position: absolute;
-    z-index: 10;
-    bottom: -60px;
-    right: 50px;
-    width: 25px;
-    height: 25px;
-    border: 10px solid #c81e2b;
-    background: rgb(179, 176, 160);
-    /* css3 */
-
-
-/* -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    /* reduce the damage in FF3.0 */
-  /*  display: block;
-}*/
-
-
 /* --------------- PAGE CV ------------------ */
 
 .banner
@@ -550,6 +316,8 @@ p.thought:after {
     margin-top: 200px;
     margin:0px;
     padding: 0px;
+    box-shadow : 10px 5px 5px black;
+    font-size: 65px;
 }
 
 /*TITRE PRINCIPAL */
@@ -559,6 +327,8 @@ p.thought:after {
 	font-size: 4vw;
 	margin: 3rem;
 	font-family: "titre";
+    text-shadow: 10px 5px 5px rgb(255, 255, 255);
+    
 }
 
 /*INTRODUCTION*/
@@ -660,6 +430,7 @@ button
     padding: 0px;
     padding-bottom: 25px;
     border-bottom: black solid 2px;
+  
 }
 
 .navEntretien li {
@@ -670,6 +441,9 @@ button
     margin: 0px;
     padding: 20px 0px;
     font-family: "titre";
+    text-shadow: 10px 5px 5px rgb(255, 255, 255);
+    font-size: 65px;
+    box-shadow : 10px 5px 5px black;
 }
 
 
@@ -678,8 +452,8 @@ button
 .headerReseaux
 {
 	background-image: url(banner2.jpg);
-	display: grid;
-	text-align: center;
+	display: flex;
+    justify-content: center;
 	height: 150px;
 	width: auto;
 	margin-bottom: 5rem;
@@ -689,6 +463,13 @@ button
     margin-top: 200px;
     margin:0px;
     padding: 0px;
+    box-shadow : 10px 5px 5px black;
+}
+
+.titleReseaux {
+    text-shadow: 10px 5px 5px rgb(255, 255, 255);
+    font-size: 65px;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
@@ -703,13 +484,13 @@ button
    grid-template-rows: repeat(3, 1fr);
    grid-gap: 10px;
    align-items: stretch;
-   font-family: "Quicksand";
+   font-family: "paragraphe";
    font-weight: 800;
    font-size: medium;
    text-align: center;
    justify-content: space-around;
    /* background-image: url(modernjobsearch.png); */
-   background-color: darkgrey;
+ 
 }
 
 .container>article {
@@ -751,7 +532,6 @@ h4 a:hover {
 
 .article {
    grid-area: photo;
-   background: yellow;
    height: 100%;
    background-size: cover;
    background-position: center;
