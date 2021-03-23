@@ -3,12 +3,14 @@
 .centered {
     text-align: center;
 }
+
 body {
     margin: 0px auto;
     padding: 0px;
     max-width: 1200px;
     max-height: 1000px;
 }
+
 .headerIndex {
     background-color: lightgoldenrodyellow;
     position: sticky;
@@ -39,7 +41,7 @@ body {
 
 .bubble {
     background-image: url(desorganiser.png);
-    background-size: cover ;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
