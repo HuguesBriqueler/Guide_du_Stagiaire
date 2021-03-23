@@ -15,13 +15,8 @@
 body {
     margin: 0px auto;
     padding: 0px;
-<<<<<<< HEAD
-    max-width: 1200px;
-    max-height: 1000px;
-=======
   /* max-width: 1200px;
     max-height: 1000px;*/
->>>>>>> master
     background-color: rgb(255, 255, 255);
 }
 
@@ -59,36 +54,15 @@ body {
 
 /*GRID BULLES + IMAGE */
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> master
-.bubble {
-    background-image: url(desorganiser.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> ada3336bca2c32d6cdeff6a2664c852ecee66666
+
 .bulles {
     background: url(homme.png) no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;  
-<<<<<<< HEAD
-    padding-bottom: 400px;
-    margin-bottom: 200px;
-=======
     
     padding-bottom: 700px;
     font-family: "paragraphe";
->>>>>>> master
->>>>>>> master
->>>>>>> ada3336bca2c32d6cdeff6a2664c852ecee66666
 }
-
 
 /*DIV QUI ENGLOBE LES BULLES */
 
@@ -555,7 +529,6 @@ p.thought:after {
     -moz-border-radius: 25px;
     border-radius: 25px;
     /* reduce the damage in FF3.0 */
-<<<<<<< HEAD
   /*  display: block;
 }*/
 
@@ -675,7 +648,7 @@ button
 }
 
 .navEntretien{
-    background-image: url("./interrogation.jpg");
+    background-image: url("./banner2.jpg");
 }
 
 .navEntretien ul {
@@ -779,9 +752,3 @@ h4 a:hover {
 #box:hover {
    transform: scale(1.1);
 }
-=======
-
-
-/*  display: block;
-}*/
->>>>>>> ada3336bca2c32d6cdeff6a2664c852ecee66666
