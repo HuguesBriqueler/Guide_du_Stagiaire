@@ -61,6 +61,16 @@ body {
     background-image: url(banner2.jpg);
 }
 
+.linkStyle {
+    color: black;
+    text-shadow: 10px 5px 5px white;
+    font-size: 1.5em;
+}
+
+.linkStyle:hover {
+    color: rgb(255, 255, 255);
+}
+
 
 /*GRID BULLES + IMAGE */
 
@@ -71,6 +81,7 @@ body {
     background-size: cover; */
 
     font-family: "paragraphe";
+    font-size: 2em;
   
   
 }
@@ -100,7 +111,7 @@ body {
         background-size: cover; 
         margin-bottom: 200px;
     }
-/*BULLE NUMERO 1 (CV)*/
+/*BULLES DE PENSEE */
 
 
 .oval-thought {
@@ -109,14 +120,14 @@ body {
     padding: 50px 40px;
     margin: 1em auto 80px;
     text-align: center;
-    color: rgb(179, 176, 160);
-    background: rgb(179, 176, 160);
-    border: 8px solid black;
+    color: rgb(228, 243, 247);
+    background: rgb(228, 243, 247);
+    border: 5px solid rgb(193, 219, 226);
     /* css3 */
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(216, 215, 206)), to(rgb(216, 215, 206)));
-    background: -moz-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
-    background: -o-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
-    background: linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(228, 243, 247)), to(rgb(228, 243, 247)));
+    background: -moz-linear-gradient(rgb(228, 243, 247), rgb(228, 243, 247));
+    background: -o-linear-gradient(rgb(228, 243, 247), rgb(228, 243, 247));
+    background: linear-gradient(rgb(228, 243, 247), rgb(228, 243, 247));
     /*
   NOTES:
   -webkit-border-radius:220px 120px; // produces oval in safari 4 and chrome 4
@@ -145,12 +156,12 @@ body {
     left: 50px;
     width: 30px;
     height: 30px;
-    background: rgb(216, 215, 206);
+    background: rgb(193, 219, 226);
     /* css3 */
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    border: 8px solid black;
+    border: 5px solid rgb(193, 219, 226);
 }
 
 
@@ -163,159 +174,17 @@ body {
     left: 30px;
     width: 15px;
     height: 15px;
-    background: rgb(216, 215, 206);
+    background: rgb(193, 219, 226);
     /* css3 */
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    border: 8px solid black;
+    border: 5px solid rgb(193, 219, 226);
 }
 
 
 
-/* 
-BULLE PENSEE 2 (ENTREPRISE)*/
 
-.oval-thought {
-    position: relative;
-    width: 270px;
-    padding: 50px 40px;
-    margin: 1em auto 80px;
-    text-align: center;
-    color: rgb(179, 176, 160);
-    background: rgb(179, 176, 160);
-    border: 8px solid black;
-    /* css3 */
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(216, 215, 206)), to(rgb(216, 215, 206)));
-    background: -moz-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
-    background: -o-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
-    background: linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
-    /*
-  NOTES:
-  -webkit-border-radius:220px 120px; // produces oval in safari 4 and chrome 4
-  -webkit-border-radius:220px / 120px; // produces oval in chrome 4 (again!) but not supported in safari 4
-  Not correct application of the current spec, therefore, using longhand to avoid future problems with webkit corrects this
-  */
-    -webkit-border-top-left-radius: 220px 120px;
-    -webkit-border-top-right-radius: 220px 120px;
-    -webkit-border-bottom-right-radius: 220px 120px;
-    -webkit-border-bottom-left-radius: 220px 120px;
-    -moz-border-radius: 220px / 120px;
-    border-radius: 220px / 120px;
-}
-
-.oval-thought p {
-    font-size: 1.25em;
-}
-
-
-/* creates the larger circle */
-
-.oval-thought:before {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 50px;
-    width: 30px;
-    height: 30px;
-    background: rgb(216, 215, 206);
-    /* css3 */
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    border: 8px solid black;
-}
-
-
-/* creates the smaller circle */
-
-.oval-thought:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 30px;
-    width: 15px;
-    height: 15px;
-    background: rgb(216, 215, 206);
-    /* css3 */
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    border: 8px solid black;
-}                                                
-
-
-/
-
-/* TROISIEME BULLE DE PENSEE (RESEAUX) */
-
-.oval-thought {
-    position: relative;
-    width: 270px;
-    padding: 50px 40px;
-    margin: 1em auto 80px;
-    text-align: center;
-    color: rgb(179, 176, 160);
-    background: rgb(179, 176, 160);
-    border: 8px solid black;
-    /* css3 */
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(216, 215, 206)), to(rgb(216, 215, 206)));
-    background: -moz-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
-    background: -o-linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
-    background: linear-gradient(rgb(216, 215, 206), rgb(216, 215, 206));
-    /*
-  NOTES:
-  -webkit-border-radius:220px 120px; // produces oval in safari 4 and chrome 4
-  -webkit-border-radius:220px / 120px; // produces oval in chrome 4 (again!) but not supported in safari 4
-  Not correct application of the current spec, therefore, using longhand to avoid future problems with webkit corrects this
-  */
-    -webkit-border-top-left-radius: 220px 120px;
-    -webkit-border-top-right-radius: 220px 120px;
-    -webkit-border-bottom-right-radius: 220px 120px;
-    -webkit-border-bottom-left-radius: 220px 120px;
-    -moz-border-radius: 220px / 120px;
-    border-radius: 220px / 120px;
-}
-
-.oval-thought p {
-    font-size: 1.25em;
-}
-
-
-/* creates the larger circle */
-
-.oval-thought:before {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 50px;
-    width: 30px;
-    height: 30px;
-    background: rgb(216, 215, 206);
-    /* css3 */
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    border: 8px solid black;
-}
-
-
-/* creates the smaller circle */
-
-.oval-thought:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 30px;
-    width: 15px;
-    height: 15px;
-    background: rgb(216, 215, 206);
-    /* css3 */
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    border: 8px solid black;
-}
 
 
 /* --------------- PAGE CV ------------------ */
@@ -557,8 +426,8 @@ button a {
    color: blue;
 }
 
-a:hover {
-   color: orange;
+.link:hover {
+   color: rgb(0, 0, 0);
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
    background-position: 0 100%;
    background-size: auto 6px;
