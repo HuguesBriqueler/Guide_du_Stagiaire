@@ -17,6 +17,9 @@
     background-image: url(banner2.jpg);
 }
 
+
+
+
 body {
     margin: 0px auto;
     padding: 0px;
@@ -24,6 +27,52 @@ body {
     max-height: 1000px;*/
     background-color: rgb(255, 255, 255);
 }
+
+/* MEDIA QUERIES PARAGRAPHES */
+
+body {font-size: 100%}
+
+p {font-size: 1.5em;}
+
+@media screen and (max-width: 64em) {
+ body {
+      font-size: 90%;
+   }
+}
+
+@media screen and (max-width: 50em) {
+ body {
+       font-size: 75%;
+   }
+}
+
+@media screen and (max-width: 30em) {
+   body {
+        font-size: 50%;
+  }
+}
+
+/*body {font-size: 100%}
+
+h1 {font-size: 2em;}
+
+@media screen and (max-width: 64em) {
+h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 50em) {
+h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 30em){
+h1 {
+    font-size: 1.5em;
+  }
+}*/
 
 .headerIndex {
     background-color: white;
@@ -71,7 +120,16 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.linkBubble {
+    color: black;
+    font-family: "paragraphe";
+   /* text-shadow: 10px 5px 5px rgb(114, 120, 124);*/
+    font-size: 1.5em;
+}
 
+.linkBubble:hover {
+    color: rgba(0, 0, 0, 0.479);
+}
 /*GRID BULLES + IMAGE */
 
 
@@ -87,7 +145,12 @@ body {
 }
 
 /*DIV QUI ENGLOBE LES BULLES */
-
+@media only screen and (max-width: 960px) {
+    .bulles {
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 0.5fr;
+    }
+ }
 .bubbles1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -184,9 +247,6 @@ body {
 
 
 
-
-
-
 /* --------------- PAGE CV ------------------ */
 
 .banner
@@ -211,11 +271,11 @@ body {
 /*TITRE PRINCIPAL */
 .entete
 {
-	font-size: 1em;
+	font-size: 0.9em;
 	margin: 3rem;
 	font-family: "titre";
     text-shadow: 10px 5px 5px rgb(255, 255, 255);
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     
 }
 
@@ -239,8 +299,16 @@ body {
 	justify-content: center;
     font-family: "titre";
     font-size: 2em;
-    padding-bottom: 50px;
-    padding-top: 50px
+    margin-bottom: 75px;
+    margin-top: 150px;
+    background-color : #3b3b3b;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    color : #ddd9d9;
+  /*  padding : 3px 8px; /* haut/bas, droite/gauche (respectivement) */
+  /*  width : 98.5%;
+    margin-top : 25px;*/
+
 }
 
 /*PARAGRAPHES DE LA PAGE */
@@ -253,46 +321,96 @@ body {
 	margin: 1rem;
 	font-size: 1.5em;
 	font-family: "paragraphe";
+ 
 }
-
-/*LISTE A PUCES*/
-.cvlist
-{
-	display: grid;
-	text-align: center;
-	line-height: 1em;
+.ressourcescv {
+    display: flex;
+    justify-content: center;
+    line-height: 2em;
+	text-indent: 50px;
+    margin: 1rem;
 	font-size: 1.5em;
 	font-family: "paragraphe";
 }
+.imgleft {
+    display: flex;
+    float: left;
+    margin-right: 10px;
+ /*   max-height: 640px;
+    max-width: auto;*/
+  /*  width: 100%;
+    height: auto;*/
+    margin-left: 50px;
+    border-radius: 50px;
+    box-shadow : 10px 5px 5px rgb(158, 158, 158);
+}
+/*LISTE A PUCES*/
+.cvlist
+{
+	display: flex;
+	text-align: right;
+	line-height: 1em;
+	font-size: 1em;
+	font-family: "paragraphe";
+    margin-right: 50px;
+}
+
+.imgright {
+    display: flex;
+    float: right;
+   
+    margin-left: 10px;
+   /* width: 100%;
+    height: auto;*/
+    border-radius: 50px;
+    margin-right: 50px;
+    box-shadow : 10px 5px 5px black;
+}
+.cvtexte {
+    display: flex;
+    justify-content: left;
+    line-height: 2em;
+    text-indent: 50px;
+    font-size: 1.5em;
+    font-family: "paragraphe";
+    margin-left: 50px;
+}
+
 
 /*BOUTONS LIENS BAS DE PAGE*/
 .button
 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	grid-gap: 1rem;
     text-align: center;
 	border-radius: 2em;
 	height: 5rem;
-	width: auto;
+	width: 100%;
 	font-family: "paragraphe";
     margin-bottom: 200px;
     margin-top: 100px;
+    color: rgb(0, 0, 0);
+
+
 }
-
-button
+input:hover {
+    background-color: rgb(92, 4, 4);
+    color: white;
+}
+input
 {
-
-	border-radius: 3rem;
+   
+	border-radius: 2rem;
 	font-family: "paragraphe";
     font-size: 1em;
-    background-color: black;
-   
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(92, 4, 4);
+    width: 100%;
+    padding: 40px;
 }
-button a {
-    color: whitesmoke;
-    
-}
+
  
 
 
@@ -306,10 +424,7 @@ button a {
 .centered {
     text-align: center;
 }
-.introEntretien {
-    font-family: "paragraphe";
-    font-size: 1.5em ;
-}
+
 /*.menuButton {
     display: flex;
     flex-direction: column;
@@ -348,6 +463,15 @@ button a {
     text-shadow: 10px 5px 5px rgb(255, 255, 255);
     font-size: 65px;
     box-shadow : 10px 5px 5px black;
+}
+
+.texteEntretien {
+    display: flex;
+    justify-content: center;
+    font-family: "paragraphe";
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-indent: 0px;
 }
 
 
@@ -423,7 +547,7 @@ button a {
 }
 
 .link {
-   color: blue;
+   color: rgb(109, 105, 105);
 }
 
 .link:hover {
