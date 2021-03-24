@@ -29,7 +29,6 @@ body {
 }
 
 /* MEDIA QUERIES PARAGRAPHES */
-
 body {font-size: 100%}
 
 p {font-size: 1.5em;}
@@ -139,7 +138,7 @@ h1 {
     background-size: cover; */
 
     font-family: "paragraphe";
-    font-size: 2em;
+    font-size: 1em;
   
   
 }
