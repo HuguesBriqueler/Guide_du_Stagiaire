@@ -51,7 +51,7 @@ body {
 }
 
 .titreIndex {
-    font-size: 65px;
+    font-size: 45px;
     color: rgb(0, 0, 5);
     text-shadow: 10px 5px 5px rgb(255, 255, 255);
     box-shadow: 10px 5px 5px black;
@@ -66,13 +66,13 @@ body {
 
 
 .bulles {
-    background: url(homme.png) no-repeat center;
+ /*   background: url(homme.png) no-repeat center;
     -webkit-background-size: cover;
-    background-size: cover;  
-    
-    padding-bottom: 700px;
+    background-size: cover; */
+
     font-family: "paragraphe";
-    margin-bottom: 200px;
+  
+  
 }
 
 /*DIV QUI ENGLOBE LES BULLES */
@@ -82,12 +82,24 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 1rem;
-    padding-bottom: 200px;
-    margin-bottom: 300px;
+   /* padding-bottom: 200px;
+    margin-bottom: 300px;*/
     margin-top: 50px;
+    
 }
 
 
+
+.imgflot {
+    display: flex;
+    justify-content: center;
+        margin:0;
+        padding:0;
+        background: no-repeat center; 
+        -webkit-background-size: cover; 
+        background-size: cover; 
+        margin-bottom: 200px;
+    }
 /*BULLE NUMERO 1 (CV)*/
 
 
@@ -527,13 +539,13 @@ button a {
    max-height: 100%;
 }
 
-img {
+.imgreseaux {
    opacity: 0.5;
    border-radius: 30px;
    box-shadow: 10px 5px 5px black;
 }
 
-img:hover {
+.imgreseaux:hover {
    opacity: 1.0;
    background-size: 150%;
    background-position: center;
