@@ -11,78 +11,39 @@
 </head>
 
 <body>
+
     <header class="headerIndex">
         <nav class="navIndex">
             <ul>
-                <li><a class ="linkStyle" href="#accueil">Accueil</a></li>
-                <li><a class ="linkStyle" href="#CV">CV</a></li>
-                <li><a class ="linkStyle" href="#entretien">Entretien</a></li>
-                <li><a class ="linkStyle" href="#reseaux">Réseau</a></li>
+                <li><a class="linkStyle" href="#accueil">Accueil</a></li>
+                <li><a class="linkStyle" href="#CV">CV</a></li>
+                <li><a class="linkStyle" href="#entretien">Entretien</a></li>
+                <li><a class="linkStyle" href="#reseaux">Réseau</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <div id="accueil" class="anchor"></div>
     <h1 class="titreIndex centered">Les pensées d'un stagiaire</h1>
 
     <div class="bulles">
         <div class="bubbles1">
             <p class="oval-thought">
-                <a class ="linkStyle" href="#CV">CV</a>
+                <a class="linkBubble" href="#CV">CV</a>
             </p>
             <div>
-                <p class="oval-thought"><a class ="linkStyle" href="#entretien">Entretien</a></p>
+                <p class="oval-thought"><a class="linkBubble" href="#entretien">Entretien</a></p>
             </div>
 
             <div>
-                <p class="oval-thought"><a class ="linkStyle" href="#reseaux">Réseau</a></p>
+                <p class="oval-thought"><a class="linkBubble" href="#reseaux">Réseau</a></p>
             </div>
         </div>
-        </div>
-       <div class="imgflot">
-            <img src="homme1.png" alt="" width="800" height="600">
-        </div>
-        <!--            <div class="pinched">
-                <blockquote class="oval-thought-border"><a href="">Demarche</a></blockquote>
-            </div> -->
-
-    
-
-
-
-
-    <!-- BULLE PENSEE 1
-    <div class="thought">This is a thought bubble.</div>
-
--->
-    <!--
-     BULLE DE PENSEE 2
-    <div class="circular-sb">
-    I'm Circular speech bubble
-    <div class="circle1"></div>
-    <div class="circle2"></div>
     </div>
-    <div class="circular-sb">
-    I'm Circular speech bubble
-    <div class="circle3"></div>
-    <div class="circle4"></div>
-    </div> !-->
-
-
-    <!-- BULLE DE PENSEE 3
-      <blockquote class="oval-thought">
-        <p>This is a blockquote that is styled to look like a thought bubble</p>
-      </blockquote>-->
-
-
-    <!--QUATRIEME BULLE DE PENSEE
-    
-     <div class="pinched">
-      <blockquote class="oval-thought-border">
-        <p>This is a blockquote that is styled to look like a thought bubble</p>
-      </blockquote>
+    <div class="imgflot">
+        <img src="homme1.png" alt="" width="800" height="600">
     </div>
-    -->
+
 
     <!----------------------------- PAGE CV --------------------------------->
 
@@ -95,7 +56,7 @@
 
     <!--INTRODUCTION-->
 
-    <div class="introCV">
+    <!-- <div class="introCV">
         <p class="introcv">
             Le CV est un document essentiel pour trouver un emploi ou un stage
             En effet, le CV est la première chose que l'employeur lira à votre sujet. C'est pourquoi,
@@ -104,37 +65,31 @@
             que
             nous allons voir tout de suite.
         </p>
-    </div>
+    </div>-->
 
     <!--PARTIE 1 AVEC LISTE DE CHOSES A FAIRE-->
 
     <div class="part1">
         <h1 class="titlecv">Les choses "essentielles" à avoir sur son CV</h1>
-        <ul class="cvlist">
-            <li>Les dates doivent être classées de la plus récente expérience à la plus ancienne</li>
-            <li>Ne faites pas de phrases, ce sera réservé pour votre lettre de motivation</li>
-            <li>Le cv ne doit pas être surchargé, si vous avez trop d'expériences, mettez celles qui vous favorisent le
-                plus</li>
-            <li>Si vous n'avez pas beaucoup d'expérience dans le domaine, mettez vos compétences en premier</li>
-            <li>Si vous êtes en formation, vous pouvez mettre les futures compétences que vous aurez acquises au moment
-                ou vous effectuerez votre stage.</li>
-        </ul>
-        <p class="textecv">
-            La liste exposée ci-dessus est une liste non exhaustive mais elle permet de déjà pouvoir
-            structurer un minimum son CV.
-            N'oubliez pas que le but premier est de vous mettre en valeur au maximum. Lorsque vous êtes étudiant ou en
-            reconversion professionnelle et que vous recherchez un stage,
-            les employeurs ne s'attendent pas à avoir des CV avec 10 ans d'expérience dans le domaine donc ne vous
-            mettez
-            pas trop la pression !
-        </p>
+        <div class="cvlist">
+            <img class="imgleft" src="cv2.jpg" alt="" width="640" height="400">
+            <p class="textecv">Les dates doivent être classées de la plus récente expérience à la plus ancienne,
+                ne faites pas de phrases, ce sera réservé pour votre lettre de motivation. <br>
+                Le cv ne doit pas être surchargé, si vous avez trop d'expériences, mettez celles qui vous favorisent le
+                plus. Au contraire, si vous n'avez pas beaucoup d'expérience dans le domaine, mettez vos compétences en
+                premier. <br>
+                Si vous êtes en formation, vous pouvez mettre les futures compétences que vous aurez acquises au moment
+                ou vous effectuerez votre stage.</p>
+        </div>
     </div>
 
     <!--PARTIE 2 LETTRE DE MOTIVATION-->
 
     <div class="part2">
         <h2 class="titlecv">La lettre de motivation</h2>
-        <p class="textecv">
+        <div class="motivationlist">
+        <img class="imgright" src="lettre.jpg" alt="" width="640" height="400">
+        <p class="cvtexte">
             Lorsque vous postulez à un stage en entreprise, une lettre de motivation vous sera demandée, lorsque vous la
             rédigerez,
             n'hésitez pas à y faire une introduction en lien avec votre futur métier et l'entreprise chez laquelle vous
@@ -151,85 +106,92 @@
             rencontrer le recruteur pour un entretien.
         </p>
     </div>
+    </div>
 
     <!--BAS DE PAGE AVEC LIENS VERS OUTILS-->
 
     <div class="footercv">
 
         <h3 class="titlecv">Des ressources utiles</h3>
-        <p class="textecv">
+        <p class="ressourcescv">
             Pour finir, nous allons vous fournir quelques liens utiles afin de pouvoir parfaire votre CV
             et votre lettre de motivation.
             Bonne lecture, en espérant que cela vous aidera !
         </p>
 
         <div class="button">
-            <button class="cvlink"><a href="https://cvdesignr.com/fr" target="_blank">CV Designr, outil très utile à la
-                    création de CV et lettres de motivation, gratuit.</a></button>
-            <button class="cvlink"><a href="https://www.canva.com/fr_fr/creer/cv/" target="_blank">Canva, autre
-                    plateforme qui permet de créer des CV structurés de manière gratuite.</a></button>
-            <button class="cvlink"><a href="https://www.modeles-de-cv.com/" target="_blank">Site web qui propose divers
-                    modèles de CV à télécharger.</a></button>
+
+           <a class="cvlink" href="https://cvdesignr.com/fr" target="_blank"> <input type=button ;
+                value="CV Designr, outil très utile à la création de cv et 
+            lettres de motiivation, gratuit"/> </a>
+           <a class="cvlink" href="https://www.canva.com/fr_fr/creer/cv/" target="_blank"><input type=button ; value="Canva, autre
+            plateforme qui permet de créer des CV structurés de manière gratuite."/></a>
+            <a class="cvlink" href="https://www.modeles-de-cv.com/" target="_blank"><input type=button ; value="Site web qui propose divers
+            modèles de CV à télécharger." /></a>
+
         </div>
 
     </div>
 
 
     <!-----------------------------------------------ENTRETIEN PAGE ------------------------------------------------------------------->
-   <!-- <header class="headerEntretien">
+    <!-- <header class="headerEntretien">
         <nav class="navEntretien">
           
             <h1 class="titreEntretien centered"></h1>
         </nav>
     </header>-->
-    
+
     <div id="entretien" class="anchor"></div>
     <div class="banner">
-        <h1 class="entete">Préparer son entretien de stage</h1>
+        <h1 class="entete">Préparer son entretien</h1>
     </div>
 
-  
+
 
 
     <div class="introEntretien centered">
-        <p>Ça y est, vous avez décroché un entretien dans l'entreprise qui vous attire tant.</p>
-        <p>Tout n'est cependant pas encore joué ! Il va falloir convaincre votre interlocuteur que vous êtes LE
-            stagiaire qui fera la différence.</p>
-        <p>Pas de panique... Nous allons t'aider à franchir cette ultime étape.</p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Numquam aspernatur sapiente expedita, officia autem suscipit cum est ducimus,
-             veritatis nesciunt corrupti, necessitatibus eligendi! Voluptatum, dolorem!</p>
-    </div>
+     
+   
+    <h1 class="titlecv">Voici une liste de questions utiles à préparer avant de passer un entretien : </h1>
+    <p class="texteEntretien">   
+        Présentez-vous en 2 minutes. <br>
+        Parlez-moi de votre parcours. <br>
+        Comment vous voyez-vous dans 5/10 ans ? <br>
+        Quels sont vos points forts (qualités) ? Vos points faibles (défauts) ?<br>
+        Que savez-vous de notre entreprise ? <br>
+        Pourquoi vous et pas un autre candidat ? <br>
+        Y a-t-il des formations prévues durant le stage ? <br>
+        Y a-t-il des possibilités de recrutement à la suite de ce stage ? <br>
+    </p>
+    
+    <h3 class="titlecv">Pour aller plus loin..</h3>
+    <p class="ressourcescv">
+      Voici d'autres ressources pour vous permettre de réussir votre entretien au mieux, d'autres questions ainsi que des astuces pour gérer votre stress!
+    </p>
+</div>
     <div class="button">
-        <button class="liensEntretien">
-            <a href="https://www.welcometothejungle.com/fr/articles/preparer-entretien-stage" target="_blank">10
-                conseils pour bien préparer son entretien de stage</a>
-        </button>
-        <button class="liensEntretien">
-            <a href="https://www.regionsjob.com/conseils/10-conseils-stress-entretien-embauche.html" target="_blank"> 10
-                conseils pour ne pas stresser en entretien d’embauche</a>
-        </button>
-        <button class="liensEntretien">
-            <a href="https://www.letudiant.fr/jobsstages/lettres-de-motivation_1/9-questions-a-anticiper-pour-reussir-votre-entretien-d-embauche.html"
-                target="_blank">9 questions à anticiper pour réussir votre entretien d'embauche</a>
-        </button>
+
+        <a class="cvlink" href="https://www.welcometothejungle.com/fr/articles/preparer-entretien-stage" target="_blank"> <input type=button ;
+            value="10 conseils pour bien préparer son entretien de stage"/> </a>
+       <a class="cvlink" href="https://www.regionsjob.com/conseils/10-conseils-stress-entretien-embauche.html" target="_blank"><input type=button ; value="10 conseils pour ne pas stresser en entretien d'embauche"/></a>
+        <a class="cvlink" href="https://www.letudiant.fr/jobsstages/lettres-de-motivation_1/9-questions-a-anticiper-pour-reussir-votre-entretien-d-embauche.html" target="_blank"><input type=button ; value="9 questions à anticiper pour réussir votre entretien d'embauche" /></a>
     </div>
 
 
 
     <!--------------------------------PAGE RESEAUX ----------------------------------------->
 
-    
+
     <div id="reseaux" class="anchor"></div>
 
     <div class="banner">
         <h1 class="entete">Réseaux</h1>
     </div>
 
- 
 
 
- 
+
     <main class="container">
 
         <div id="box">
@@ -238,18 +200,26 @@
                 <h1>Paris</h1>
 
                 <h4>
-                    <a class="link" href="https://www.wizbii.com/search/jobs?cities=af9599b85ad97dcead64bbb7bc500445&q=javascript#layout-header">Wizbii</a>
+                    <a class="link" href="https://www.wizbii.com/search/jobs?cities=af9599b85ad97dcead64bbb7bc500445&q=javascript#layout-header" style="text-decoration: none;">Wizbii</a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://urbanlinker.com/jobs">Urban Linker</a>
+                    <a class="link" href="https://urbanlinker.com/jobs" style="text-decoration: none;">Urban Linker</a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://www.jobsinparis.fr/?q=javascript+stage&languages%5B0%5D=en&languages%5B1%5D=fr&country=FR">Jobs in Paris</a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://www.jobfluent.com/jobs-paris/frontend-developer">Job Fluent</a>
+                    <a class="link" href="https://urbanlinker.com/jobs" style="text-decoration: none;">Urban Linker</a>
                 </h4>
+                <h4>
 
+                    <a class="link" href="https://www.jobsinparis.fr/?q=javascript+stage&languages%5B0%5D=en&languages%5B1%5D=fr&country=FR" style="text-decoration: none;">Jobs in Paris</a>
+                </h4>
+                <h4>
+                    <a class="link" href="https://www.jobfluent.com/jobs-paris/frontend-developer" style="text-decoration: none;">Job Fluent</a>
+                </h4>
+                <h4>
+                    <a class="link" href="https://nexten.io/fr/" style="text-decoration: none;">Nexten.io</a>
+                </h4>
 
             </article>
         </div>
@@ -258,36 +228,32 @@
             <img class="imgreseaux" src="./photos/france1.png" alt="">
             <article>
                 <h1>France</h1>
-
-                <h4><a class="link" href="https://fr.indeed.com/jobs?q=javascript&l=France">Indeed France</a>
+                <h4><a class="link" href="https://fr.indeed.com/jobs?q=javascript&l=France" style="text-decoration: none;">Indeed France</a>
                 </h4>
-                <h4><a class="link" href="https://www.monster.fr/emploi/recherche/?q=javascript">Monster </a>
+                <h4><a class="link" href="https://www.monster.fr/emploi/recherche/?q=javascript" style="text-decoration: none;">Monster </a>
                 </h4>
-                <h4><a class="link"
-                        href="https://candidat.pole-emploi.fr/offres/recherche?motsCles=javascript&offresPartenaires=true&range=0-19&rayon=10&tri=0">Pole
+                <h4><a class="link" href="https://candidat.pole-emploi.fr/offres/recherche?motsCles=javascript&offresPartenaires=true&range=0-19&rayon=10&tri=0" style="text-decoration: none;">Pole
                         emploi</a>
                 </h4>
-                <h4><a class="link" href="https://stackoverflow.com/jobs?q=javascript&l=Paris%2C+France&d=20&u=Km">Stack
+                <h4><a class="link" href="https://stackoverflow.com/jobs?q=javascript&l=Paris%2C+France&d=20&u=Km" style="text-decoration: none;">Stack
                         overflow</a>
                 </h4>
                 <h4>
-                    <a class="link"
-                        href="https://www.welcometothejungle.com/fr/jobs?refinementList%5Bcontract_type_names.fr%5D%5B0%5D=Stage&page=1&query=javascript">Welcome
+                    <a class="link" href="https://www.welcometothejungle.com/fr/jobs?refinementList%5Bcontract_type_names.fr%5D%5B0%5D=Stage&page=1&query=javascript" style="text-decoration: none;">Welcome
                         to the Jungle </a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://www.talent.io/h4/fr-fr/home">Talent.io </a>
+                    <a class="link" href="https://www.talent.io/h4/fr-fr/home" style="text-decoration: none;">Talent.io </a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://wilders.co/">Wilders.co </a>
+                    <a class="link" href="https://wilders.co/" style="text-decoration: none;">Wilders.co </a>
                 </h4>
                 <h4>
-                    <a class="link"
-                        href="https://www.linkedin.com/jobs/search/?geoId=107594314&keywords=javascript&location=Reims%2C%20Grand%20Est%2C%20France">LinkedIn
+                    <a class="link" href="https://www.linkedin.com/jobs/search/?geoId=107594314&keywords=javascript&location=Reims%2C%20Grand%20Est%2C%20France" style="text-decoration: none;">LinkedIn
                     </a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://neuvoo.fr/emplois/?k=javascript&l=&f=&o=&h4=&r=15">Neuvoo </a>
+                    <a class="link" href="https://neuvoo.fr/emplois/?k=javascript&l=&f=&o=&h4=&r=15" style="text-decoration: none;">Neuvoo </a>
                 </h4>
             </article>
         </div>
@@ -296,17 +262,25 @@
             <img class="imgreseaux" src="./photos/grand_est.png" alt="">
             <article>
                 <h1>Grand Est</h1>
+                <h4>
+                    <a class="link" href="http://www.leader-emploi.com/" style="text-decoration: none;">Leader-emploi</a>
+                </h4>
+                <h4>
+                    <a class="link" href="https://www.lesjeudis.com/recherche?q=javascript&loc=Grand+Est" style="text-decoration: none;">Les Jeudis</a>
+                </h4>
+                <h4>
+                    <a class="link" href="https://www.onlyengineerjobs.fr/en/engineer-jobs/developer?search=javascript&job_geo_location=Grand+Est%2C+France&radius=50&countryban=&lat=48.699803&lon=6.1878074&country=France&administrative_area_level_1=Grand+Est" style="text-decoration: none;">Only engineer jobs</a>
+                </h4>
 
-                <h4>
-                    <a class="link" href="http://www.leader-emploi.com/">Leader-emploi</a>
+                <h4> <a class="link" href="https://emploi.alsacreations.com/" style="text-decoration: none;">Emploi Alsa</a>
+                </h4>
+                <h4> <a class="link" href="https://adopte1dev.com/offres-d-emploi" style="text-decoration: none;">Adopte un Dev</a>
+                </h4>
+                <h4> <a class="link" href="https://discord.com/invite/vuswXXX" style="text-decoration: none;">Champagne Ardenne Discord champar'Dev</a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://www.lesjeudis.com/recherche?q=javascript&loc=Grand+Est">Les Jeudis</a>
+                    <a class="link" href="" style="text-decoration: none;"></a>
                 </h4>
-                <h4>
-                    <a class="link" href="https://www.onlyengineerjobs.fr/en/engineer-jobs/developer?search=javascript&job_geo_location=Grand+Est%2C+France&radius=50&countryban=&lat=48.699803&lon=6.1878074&country=France&administrative_area_level_1=Grand+Est">Only engineer jobs</a>
-                </h4>
-
 
 
             </article>
@@ -315,19 +289,22 @@
             <img class="imgreseaux" src="./photos/belgium.png" alt="">
             <article>
                 <h1>Frontier</h1>
-
                 <h4>
-                    <a class="link" href="https://emplois.be.indeed.com/emplois?q=javascript&l=Belgium">Indeed Belgium
+                    <a class="link" href="https://emplois.be.indeed.com/emplois?q=javascript&l=Belgium" style="text-decoration: none;">Indeed Belgium
                     </a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://lu.indeed.com/jobs?q=javascript&l=Luxembourg">Indeed Luxembourg </a>
+                    <a class="link" href="https://lu.indeed.com/jobs?q=javascript&l=Luxembourg" style="text-decoration: none;">Indeed Luxembourg </a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://en.jobs.lu/javascript-jobs">Jobs lu </a>
+                    <a class="link" href="https://en.jobs.lu/javascript-jobs" style="text-decoration: none;">Jobs lu </a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://www.linkedin.com/jobs/search/?keywords=javascript">LinkedIn</a>
+                    <a class="link" href="https://www.linkedin.com/jobs/search/?keywords=javascript" style="text-decoration: none;">LinkedIn</a>
+                </h4>
+                <h4> <a class="link" href="https://www.civiweb.com/" style="text-decoration: none;">Mon Volontariat International</a>
+                </h4>
+                <h4> <a class="link" href="https://www.optioncarriere.lu/" style="text-decoration: none;">Option Carrière</a>
                 </h4>
 
             </article>
@@ -336,25 +313,31 @@
         <div id="box">
             <img class="imgreseaux" src="./photos/freelance.png" alt="">
             <article>
-                <h1>Freelance</h1>
+                <h1>Freelance et Sites d'entreprise</h1>
 
                 <h4>
-                    <a class="link" href="https://www.upwork.com/freelance-jobs/javascript/">Upwork </a>
+                    <a class="link" href="https://www.upwork.com/freelance-jobs/javascript/" style="text-decoration: none;">Upwork </a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://www.freelancer.com/jobs/javascript/">Freelancer </a>
+                    <a class="link" href="https://www.freelancer.com/jobs/javascript/" style="text-decoration: none;">Freelancer </a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://www.toptal.com/freelance-jobs/developers/javascript">Toptal </a>
+                    <a class="link" href="https://www.toptal.com/freelance-jobs/developers/javascript" style="text-decoration: none;">Toptal </a>
+                </h4>
+                <h4> <a class="link" href="https://www.ibm.com/employment/ciceurope/" style="text-decoration: none;">IBM France</a>
+                </h4>
+                <h4> <a class="link" href="https://letremplin.parisandco.paris/Startups/Startups-incubees" style="text-decoration: none;">annuaire Le tremplin Paris</a>
+                </h4>
+                <h4> <a class="link" href="https://nordeststartup.fr/jobs-recrutement/" style="text-decoration: none;">Annuaire Village by CA Reims</a>
+                </h4>
+                <h4> <a class="link" href="https://paris.startups-list.com/" style="text-decoration: none;">Paris startups list</a>
+                </h4>
+                <h4> <a class="link" href="https://lespepitestech.com/startup-search" style="text-decoration: none;">Annuaire startups</a>
+                </h4>
+                <h4> <a class="link" href="https://www.usine-digitale.fr/annuaire-start-up/" style="text-decoration: none;">Annuaire startups</a>
                 </h4>
                 <h4>
-                    <a class="link" href=""></a>
-                </h4>
-                <h4>
-                    <a class="link" href=""></a>
-                </h4>
-                <h4>
-                    <a class="link" href=""></a>
+                    <a class="link" href="" style="text-decoration: none;"></a>
                 </h4>
             </article>
         </div>
@@ -364,23 +347,24 @@
             <article>
                 <h1>Reims</h1>
 
-                <h4><a class="link" href="https://fr.jooble.org/emploi-stage-d%C3%A9veloppement-web/Reims">Jooble</a>
+                <h4><a class="link" href="https://fr.jooble.org/emploi-stage-d%C3%A9veloppement-web/Reims" style="text-decoration: none;">Jooble</a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://www.carriere-info.fr/?utm_expid=9095495-16.7T6zsQIXR5yd-IBrUsDgog.0&utm_referrer=http%3A%2F%2Fwww.pearltrees.com%2F">Carriere-info.fr</a>
+                    <a class="link" href="https://www.carriere-info.fr/?utm_expid=9095495-16.7T6zsQIXR5yd-IBrUsDgog.0&utm_referrer=http%3A%2F%2Fwww.pearltrees.com%2F" style="text-decoration: none;">Carriere-info.fr</a>
                 </h4>
                 <h4>
-                    <a class="link" href="https://www.jobtic.fr/fr/chercher-emplois-it">Jobtic.fr</a>
+                    <a class="link" href="https://www.jobtic.fr/fr/chercher-emplois-it" style="text-decoration: none;">Jobtic.fr</a>
                 </h4>
                 <h4>
-                    <a class="link" href=""></a>
+                    <a class="link" href="https://welovedevs.com/fr/" style="text-decoration: none;">We love devs</a>
                 </h4>
                 <h4>
-                    <a class="link" href=""></a>
+                    <a class="link" href="https://diversifiezvostalents.com/#/" style="text-decoration: none;">GEN Jobboard</a>
                 </h4>
                 <h4>
-                    <a class="link" href=""></a>
+                    <a class="link" href="https://www.1jeune1solution.gouv.fr/emplois" style="text-decoration: none;">1 jeune 1 solution</a>
                 </h4>
+
             </article>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
