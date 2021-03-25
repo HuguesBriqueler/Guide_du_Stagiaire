@@ -35,7 +35,7 @@ body {
 /********************************************* NAVBAR STICKY + TITRE ACCUEIL **************************************************/
 
 .anchor {
-    height: 130px;
+    height: 50px;
  background-image: url(banner2.jpg);
 }
 
@@ -211,7 +211,7 @@ body {
     padding: 0px;
     box-shadow : 10px 5px 5px black;
     font-size: 65px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 
@@ -446,7 +446,13 @@ input
         font-size: 75%;
        
     }
- 
+    .anchor{
+        height: 0px;
+    }
+    .banner {
+        margin: 0px;
+        padding: 0px;
+    }
     .headerIndex {
         display: flex;
         flex-direction: column-reverse;
