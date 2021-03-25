@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "titre";
     src: url("titlePolice.ttf");
@@ -26,9 +25,8 @@ img {
     box-sizing: border-box;
 }
 
-
 body {
-    margin: 0px auto;
+    margin: 0px;
     padding: 0px;
     background-color: rgb(255, 255, 255);
 }
@@ -45,11 +43,10 @@ body {
 .headerIndex {
     background-color: white;
     position: sticky;
-    top: 8px;
+    top: 0px;
     padding-bottom: 70px;
     background-image: url(banner2.jpg);
-    z-index: 10;
-    
+    z-index: 10; 
 }
 
 .navIndex ul {
@@ -60,23 +57,13 @@ body {
     border-bottom: black solid 2px;
     font-family: "titre";
     font-weight: bolder;
-   
+ 
 }
 
 .navIndex li {
     list-style: none;
 }
 
-.titreIndex {
-    font-size: 45px;
-    color: rgb(0, 0, 5);
-    text-shadow: 10px 5px 5px rgb(255, 255, 255);
-    box-shadow: 10px 5px 5px black;
-    margin: 0px;
-    padding: 20px 0px;
-    font-family: "titre";
-    background-image: url(banner2.jpg);
-}
 
 
 /**************************************************** LIENS DE LA NAVBAR ************************************************/
@@ -256,7 +243,11 @@ body {
 
 
 /***************************************************** PARAGRAPHES DE LA PAGE CV **********************************************************/
-
+.boxCV
+{
+	display: flex;
+	text-align: right;	
+}
 .paragrapheCV
 {
 	line-height: 2em;
@@ -269,11 +260,7 @@ body {
 
 /********************************************** IMAGE PLACEE A GAUCHE DU PARAGRAPHE **************************************************/
 
-.boxCV
-{
-	display: flex;
-	text-align: right;	
-}
+
 
 .imgleft {
     border-radius: 50px;
@@ -405,6 +392,8 @@ input
    opacity: 0.5;
    border-radius: 30px;
    box-shadow: 10px 5px 5px black;
+   width: 50%;
+   height: auto;
 }
 
 .imgreseaux:hover {
