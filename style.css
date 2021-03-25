@@ -231,8 +231,8 @@ body {
 
 .titles
 {
-	display: flex;
-	justify-content: center;
+	
+	text-align: center;
     font-family: "titre";
     font-size: 2em;
     margin-bottom: 75px;
