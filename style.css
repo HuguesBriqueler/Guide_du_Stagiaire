@@ -337,6 +337,7 @@ input
     border: 2px solid rgb(92, 4, 4);
     width: 100%;
     padding: 40px;
+    text-align: center;
 }
 
 
@@ -448,11 +449,18 @@ input
     .boxMotivation {
         flex-direction: column;
     }
-.container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
     .banner {
         font-size: 2rem;
+    }
+    .button {
+        grid-template-columns: 1fr;
+    }
+    input {
+        width: 80vw;
+        padding: 20px;
     }
 }
