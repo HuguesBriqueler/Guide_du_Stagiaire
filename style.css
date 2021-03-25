@@ -281,14 +281,15 @@ body {
 
 
 /****************************************************** PARAGRAPHE SECTION ENTRETIEN **************************************/
-
+.boxEntretien {
+    margin-right: 20px;
+}
 .paragrapheEntretien {
-    display: flex;
-    justify-content: center;
     font-family: "paragraphe";
     font-size: 1.2em;
-    line-height: 1.5em;
+    line-height: 1.8em;
     text-indent: 0px;
+    text-align: center;
 }
 
 
@@ -445,13 +446,22 @@ input
     }
     .boxCV {
         flex-direction: column;
+        text-align: center;
     }
     .boxMotivation {
         flex-direction: column;
+        text-align: center;
+    }
+    .boxEntretien {
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+    .paragrapheEntretien {
+        text-align: justify;
     }
     .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     }
     .banner {
         font-size: 2rem;
